@@ -13,6 +13,34 @@ describe("DNA Pairing algorithm", () => {
     ["T", [["T", "A"]]],
     ["C", [["C", "G"]]],
     ["G", [["G", "C"]]],
+    [
+      "AT",
+      [
+        ["A", "T"],
+        ["T", "A"],
+      ],
+    ],
+    [
+      "TA",
+      [
+        ["T", "A"],
+        ["A", "T"],
+      ],
+    ],
+    [
+      "CG",
+      [
+        ["C", "G"],
+        ["G", "C"],
+      ],
+    ],
+    [
+      "GC",
+      [
+        ["C", "G"],
+        ["G", "C"],
+      ],
+    ],
   ])(
     "WHEN '%s' is passed in to pairElement THEN %o is returned",
     (str, expected) => {
