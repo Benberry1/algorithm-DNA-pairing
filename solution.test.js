@@ -3,7 +3,8 @@ const { pairElement } = require("./solution");
 describe("DNA Pairing algorithm", () => {
   // Ensure result is an array
   test("pairElement returns an array", () => {
-    const result = pairElement();
+    const result = pairElement("Test");
+    console.log(result);
     expect(Array.isArray(result)).toBe(true);
   });
 
@@ -37,8 +38,8 @@ describe("DNA Pairing algorithm", () => {
     [
       "GC",
       [
-        ["C", "G"],
         ["G", "C"],
+        ["C", "G"],
       ],
     ],
   ])(

@@ -1,17 +1,23 @@
 const pairElement = (str) => {
+  const splitStr = str.split("");
+
   const dnaStrand = [];
-  if (str === "A") {
-    dnaStrand.push(["A", "T"]);
+
+  for (const letter of splitStr) {
+    if (letter === "A") {
+      dnaStrand.push(["A", "T"]);
+    }
+    if (letter === "T") {
+      dnaStrand.push(["T", "A"]);
+    }
+    if (letter === "C") {
+      dnaStrand.push(["C", "G"]);
+    }
+    if (letter === "G") {
+      dnaStrand.push(["G", "C"]);
+    }
   }
-  if (str === "T") {
-    dnaStrand.push(["T", "A"]);
-  }
-  if (str === "C") {
-    dnaStrand.push(["C", "G"]);
-  }
-  if (str === "G") {
-    dnaStrand.push(["G", "C"]);
-  }
+
   return dnaStrand;
 };
 
