@@ -49,6 +49,18 @@ describe("DNA Pairing algorithm", () => {
       expect(result).toEqual(expected);
     }
   );
+
+  // Negative paths
+  // No input passed to function
+  const errorMessage = "Please provide a valid string";
+
+  test('WHEN no input is passed to pairElement THEN an error of "Please provide a valid string" will be returned', () => {
+    expect(() => pairElement()).toThrow(errorMessage);
+  });
+
+  test('WHEN an input that is not a string is passed to pairElement THEN an error of "Please provide a valid string" will be returned', () => {
+    expect(() => pairElement(20)).toThrow(errorMessage);
+  });
 });
 
 // Algorithm criteria
