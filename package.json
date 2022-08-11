@@ -1,0 +1,16 @@
+{
+  "name": "algorithm-dna-pairing",
+  "version": "1.0.0",
+  "description": "Solution and testing for algorithm DNA pairing",
+  "main": "solution.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "start": "node solution.js"
+  },
+  "author": "Ben Berry",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^28.1.3"
+  }
+}
