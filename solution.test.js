@@ -1,3 +1,13 @@
+// Algorithm criteria
+// Take an input string
+// Determine the characters it is made up of
+// If the character is A THEN an array with A, T needs to be created
+// If the character is T THEN an array with T, A needs to be created
+// If the character is C THEN an array with C, G needs to be created
+// If the character is G THEN an array with G, C needs to be created
+
+// Each array is then added to an overall array which is then returned. E.g., [["G", "C"], ["C","G"], ["G", "C"]]
+
 const { pairElement } = require("./solution");
 
 describe("DNA Pairing algorithm", () => {
@@ -62,13 +72,3 @@ describe("DNA Pairing algorithm", () => {
     expect(() => pairElement(20)).toThrow(errorMessage);
   });
 });
-
-// Algorithm criteria
-// Take an input string
-// Determine the characters it is made up of
-// If the character is A THEN an array with A, T needs to be created
-// If the character is T THEN an array with T, A needs to be created
-// If the character is C THEN an array with C, G needs to be created
-// If the character is G THEN an array with G, C needs to be created
-
-// Each array is then added to an overall array which is then returned. E.g., [["G", "C"], ["C","G"], ["G", "C"]]
